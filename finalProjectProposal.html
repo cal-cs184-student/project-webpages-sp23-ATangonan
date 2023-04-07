@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+  body {
+    background-color: white;
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  kbd {
+    color: #121212;
+  }
+</style>
+<title>CS 184 Final Project</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+</head>
+
+
+<body>
+
+<h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2023</h1>
+<h1 align="middle">Final Project Proposal</h1>
+<h2 align="middle">David Ge, Matthew Lu, Adam Tangonan, Jenny Mendez Mendez</h2>
+
+<!-- Add Website URL -->
+
+
+
+
+<h2 align="middle">PowerWash Simulator</h2>
+
+
+
+<h2 align="middle">Summary</h2>
+
+<p>
+    We are going to simulate fast-moving pressurized water through different nozzles with fluid simulations. This will be an interactive simulation game where the objective is to clean a certain object or area.
+</p>
+
+
+
+
+<h2 align="middle">Problem Description</h2>
+
+<p>
+    Describe the problem that you are trying to solve, why it is important, where it is challenging. Give us a general idea on how you are going to solve it.
+</p>
+
+<p>
+    Problem(s) to be solved:
+</p>
+<p>
+<ul style=“list-style-type:square”>
+
+<li>Create at least 2 assets for clean/dirty objects and blend them or morph them</li>
+
+<li>How to model the objects such that only a specific area of it can get washed at a time</li>
+
+<li>How would the tool spray water? How would the water interact with the object?</li>
+
+</ul>
+</p>
+
+
+<p>
+    Importance
+</p>
+<p>
+<ul style=“list-style-type:square”>
+
+<li>Without the assets, we would have nothing to clean or use to wash. There needs to be accuracy with what is being washed at a certain time in order to ensure the simulation works accordingly. Water interacting with the dirty areas is once of the main mechanics of the game.
+
+</ul>
+</p>
+
+<p>
+    Challenge(s)
+</p>
+<p>
+<ul style=“list-style-type:square”>
+
+<li>How to integrate Unity. Ensure no one messes up the Git repo for the project. Having a good efficient algorithm and run time.
+
+</ul>
+</p>
+
+
+<p>
+    Plan of Attack
+</p>
+<p>
+<ul style=“list-style-type:square”>
+
+<li>Create a game world. Plan out the physics behind each tool. Work on how the water will interact with objects and the environment. Set some kind of end goal for the player or incentive them to keep playing.
+<li>The player will be able to walk around an environment and use a variety of tools with differing custom physics to manipulate the environment.
+<li>We can measure fps using some kind of built in Unity system
+
+</ul>
+</p>
+
+
+
+<h2 align="middle">Goals and Deliverables</h2>
+
+<p>
+
+
+
+<p>What we plan to deliver (describe what you believe you must accomplish to have a successful project and achieve the grade you expect) (your baseline plan -- planning for some unexpected problems would make sense)
+</p>
+  <ul style=“list-style-type:square”>
+    <li>This is the most important part of your proposal. You should carefully think through what you are trying to accomplish, what results you are going for, and why you think you can accomplish those goals.
+    <li>For example: since this is a graphics class you will likely define the kind of images you will create (e.g. including a photo of a new lighting effect you will simulate).
+        <ul style=“list-style-type:square”>
+          <li>Some specific examples of what we plan to see is how the water will interact with different objects being washed, how it interacts with nozzles, and how it will dissipate after a period of time. Maybe even the opposite, we can have a nozzle that shoots out muddy water to make the object dirtier.
+
+        </ul>
+    <li>If you are working on an interactive system, describe what demo you will create.
+      <ul style=“list-style-type:square”>
+          <li>The player will be able to walk around an environment and use a variety of tools with differing custom physics to manipulate the environment.
+      </ul>
+  <li>Define how you will measure the quality/performance of your system (e.g. graphs showing speedup, or quantifying accuracy). It may not be possible to define precise target metrics at this time, but we encourage you to try.
+      <ul style=“list-style-type:square”>
+          <li>We can measure fps using some kind of built in Unity system
+      </ul>
+  <li>What questions do you plan to answer with your analysis?
+    <ul style=“list-style-type:square”>
+          <li>How does fast-moving pressurized water interact with various objects and environments?
+          <li>Is power washing fun or relaxing for the player?
+    </ul>
+  </ul>
+<p>What we hope to deliver (describe what you hope to achieve if things go well and you get ahead of schedule (your aspirational plan))
+</p>
+    <ul style=“list-style-type:square”>
+          <li>Create a reward/point system that tracks the player’s progress during the wash and gives them a score based on how well they cleaned.
+          <li>More objects that interact with water in different ways, such as sponges, fire, or sand.
+    </ul>
+</ul>
+
+
+
+
+<h2 align="middle">Schedule</h2>
+
+<p>
+    In this section you should organize and plan the tasks and subtasks that your team will execute.
+</p>
+<p>
+    Since presentations are ~4 weeks from the due-date of the proposal, you should include a set of tasks for every week.
+</p>
+<ul style=“list-style-type:square”>
+      <li>Week 1: Project Proposal
+          <ul style=“list-style-type:square”>
+            <li>Get a general idea of what we are going to build and layout baseline things we need to achieve by the end of the project
+              <li>Adjust things based on the feedback we will receive
+            </ul>
+      <li>Week 2: Start on the Project
+          <ul style=“list-style-type:square”>
+            <li>Create a final project repository and share it with team members
+
+              <li>Main Coding (Break off by sections to code)
+                <li>UI/UX (theme, assets, general design)
+                <li>Start on Milestone video and Milestone report
+            </ul>
+        <li>Week 3: Continue Working on the project
+          <ul style=“list-style-type:square”>
+            <li>Should be midthrough done with the final project
+                <li>Incorporate Staff’s Feedback
+                <li>Testing functionality and bugs
+
+
+            </ul>
+        <li>Week 4: Wrapping up + Website Write Up
+          <ul style=“list-style-type:square”>
+            <li>Summarize our project into the write up
+                <li>Create our presentation
+                <li>Film the 1-2 min Video
+
+            </ul>
+</ul>
+
+<h2 align="middle">Resources</h2>
+<ul style=“list-style-type:square”>
+  <li>Past project (Spring 2018) of a Fluid Simulation & Surfacing
+      <li>Unity documentations
+        <li>Unity Game Engine
+
+  </ul>
+
+</body>
+</html>
