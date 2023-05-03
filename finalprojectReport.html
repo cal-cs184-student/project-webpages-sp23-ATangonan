@@ -78,9 +78,6 @@
 <p>
 <ul style=“list-style-type:square”>
 
-<i> A 1-2 page summary of your technical approach, techniques used, algorithms implemented, etc. (use references to papers or other resources for further detail). Highlight how your approach varied from the references used (did you implement a subset, or did you change or enhance anything), the unique decisions you made and why.
-</i>
-
 <li> We used a system of numerous particles in order to have a fluid simulation of the pressurized water coming out of a hose. We had to apply gravity as well as collisions between the water particles and the surface of the object that we were power washing. Each individual particle had to have a 3d rigidbody for collisions as well as a starting velocity to simulate the pressurized environment of the hose. The water particles also needed to act like water after it has hit the object, where it would lose most of its momentum and remain on the ground for some time. This had to be done though applying both a dampening force as well as a bounce force to the particles, thus they would continue acting and colliding around after the first collision with the object. Afterward, it would dissipate after a set lifespan when it would have mostly lost all of its momentum from the pressurized hose. </li>
 <li>The overall idea of our technique is to paint a texture by assigning it to another texture. Some things we needed to think about are the location of the dirt on the object when the player clicks on the object, as well as flipping the floor mat. </li>
 <li>We used Unity’s built-in scene manager and event system. We implemented a camera following the player’s rotation as well as the player’s movement. We did this by setting the camera where the player is and whenever a mouse movement is detected, the player and the camera would rotate accordingly. We tried two types of movement/camera systems, one with lerping for the camera whenever it detects mouse movement and one with standard rotation using Euler quaternion. </li>
@@ -103,7 +100,7 @@
 <p>
   <ul style=“list-style-type:square”>
 
-  <li> <i>A description of problems encountered and how you tackled them. </i>
+  <li>
     <ul style=“list-style-type:square”>
 
     <li> Setting up the project required an assortment of trial and error regarding the Unity libraries and add-ons involved. We tried watching different YouTube videos in order to solve issues with Unity. One of the major issues we stumbled upon was ensuring the shaders worked properly. The main shader for the material was staying Pink/Magenta, even though we edited the main shader for this prefab. The solution to this issue was adding Universal Render Pipeline Asset, Universal RP, 2D Sprite, CineMachine, Probuilder, and TextMeshPro. We also needed to run the Unity Project using Unity 2020.3.0 version. </li>
